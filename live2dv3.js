@@ -1673,7 +1673,7 @@
         this.app.renderer.resize(width, height)
 
         if (this.model) {
-          this.model.position = new PIXI.Point((width * 1), (height * 1))
+          this.model.position = new PIXI.Point((width * .5), (height * .5))
           this.model.scale = new PIXI.Point((this.model.position.x * 1), (this.model.position.x * 1))
           this.model.masks.resize(this.app.view.width, this.app.view.height)
         }
